@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ToDoItem from "./ToDoItem";
+// import ToDoItem from "./ToDoItem";
 
 //We know that a React app wont end up looking like this
 //We would probably want to seperate out this app into seperate components.
@@ -31,7 +31,7 @@ function App() {
   }
 
   function addItem() {
-    setItems((prevItems) => {
+    setItems(prevItems => {
       return [...prevItems, inputText];
     });
     setInputText("");
@@ -50,9 +50,7 @@ function App() {
       </div>
       <div>
         <ul>
-          {items.map((todoItem) => (
-            <ToDoItem />
-          ))}
+          {items.map(todoItem => ( <li>{todoItem}</li> ))}
         </ul>
       </div>
     </div>
