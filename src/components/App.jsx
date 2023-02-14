@@ -6,20 +6,7 @@ import React, { useState } from "react";
 //We'll probabbly ha/e a component for the heading area, for the di/, for the
 //li's (each being a seperate component rendered)
 
-//So let's create a new file inside our components folder called
-//toDoItem.jsx (check left)
-//Now inside this ToDoItem, let's take out <li> from this file and ]
-// place it in there and create a seperate component.
-//The beha.iour that we're looking for afterwards is the ability to add new
-//items to the list.
-//Check ToDoItem.js for further notes. Add the boiler plate codes etc.
 
-//After we ha/e created the <li> in its own file, we import it in here and we
-//can use this component rather than writing li in this file when we want
-//to render it.
-//So below we will ha/e ToDoItem. (check below, under item.map)
-//And then to display a diff toDo item each time we map through our array
-//we are going to pass this ToDoItem which is the text in
 
 function App() {
   const [inputText, setInputText] = useState("");
